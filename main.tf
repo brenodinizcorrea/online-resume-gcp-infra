@@ -1,3 +1,12 @@
-resource "google_project_service" "cloud_storage" {
-    service = "storage.googleapis.com"
+locals {
+  apis = [
+    "storage.googleapis.com",
+    "artifactregistry.googleapis.com",
+  ]
+}
+
+resource "google_project_service" "services" {
+  for_each = toset(local.apis)
+  project  = var.project_name
+  service  = each.value
 }
