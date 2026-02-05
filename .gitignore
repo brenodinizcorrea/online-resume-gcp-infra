@@ -1,0 +1,43 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfvars.json
+*.tfvars.json
+*.backup
+*.log
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Node / JS (se usar para scripts)
+node_modules/
+
+# Python (se usar scripts)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
