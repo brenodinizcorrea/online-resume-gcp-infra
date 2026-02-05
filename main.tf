@@ -2,6 +2,7 @@ locals {
   apis = [
     "storage.googleapis.com",
     "artifactregistry.googleapis.com",
+    "secretmanager.googleapis.com",
   ]
 }
 
